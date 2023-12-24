@@ -1,4 +1,6 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom';
+import Swal from 'sweetalert2';
+import { RiMenu2Line } from 'react-icons/ri';
 
 const NavBar = () => {
   const { logOut, user } = useAuth();
