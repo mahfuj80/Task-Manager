@@ -1,6 +1,7 @@
 import { Link, NavLink, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { RiMenu2Line } from 'react-icons/ri';
+import useAuth from '../../hooks/Auth/UseAuth';
 
 const NavBar = () => {
   const { logOut, user } = useAuth();
@@ -26,7 +27,7 @@ const NavBar = () => {
   return (
     <>
       <div>
-        <div className="navbar bg-base-200 fixed z-20 max-w-screen-xl	mx-auto top-0 rounded-lg">
+        <div className="navbar bg-base-200 fixed z-20 container mx-auto top-0 rounded-lg">
           <div className="navbar-start">
             <Link to={`/dashboard/`} className="hidden lg:block">
               <img className="h-12" src="/logo.png" alt="Logo" />
